@@ -1,0 +1,8 @@
+mido>=1.3.0
+# Inject backend (Windows). On Linux, pynput pulls evdev and needs build tools;
+# dry-run works with mido alone. Install pynput on the game PC:
+pynput>=1.7.6; sys_platform == "win32"
+requests>=2.31.0
+customtkinter>=5.2.0
+# Optional: build Windows .exe
+# pyinstaller>=6.0.0
